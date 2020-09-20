@@ -1,0 +1,62 @@
+@import "~office-ui-fabric-react/dist/sass/References.scss";
+@import "~office-ui-fabric-react/dist/sass/semanticSlots";
+// @import "./node_modules/spfx-uifabric-themes/office.theme";
+$primaryColor : "[theme: themePrimary, default: #0078d4]";
+$primaryText:"[theme:primaryButtonText, default:#333333]";
+$primaryBackground:"[theme:primaryBackground, default:#333333]";
+$bodyText:"[theme:bodyText, default:#333333]";
+.linkButtons {
+
+  .button {
+   display: flex;
+
+  min-height: 60px;
+  max-height: 60px;
+ 
+  justify-content: start;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  flex-direction: row;
+  border-style: solid;
+  border-width: 1px;
+  border-color: $primaryText;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  align-items: flex-start;
+  background-color:$primaryBackground;
+  color: $bodyText;
+  max-width:100%;
+  }
+  
+  .button:hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+    background-color: $primaryColor;
+    color: $primaryText;
+    cursor: pointer;
+  }
+
+  .imageContainer {
+    display: flex;
+    margin-right: 30px;
+    align-items: center;
+    width: 45px;
+    height: 60px;
+  }
+
+  .image {
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .title {
+    font-size: 16px;
+    font-weight: 300px;
+    line-height: 25px;
+    line-break: nowrap;
+    overflow: hidden;
+    text-overflow: 'ellipsis';
+  }
+}

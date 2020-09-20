@@ -1,0 +1,20 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "security-link-buttons-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/securityLinkButtons/SecurityLinkButtonsWebPart.js",
+          "manifest": "./src/webparts/securityLinkButtons/SecurityLinkButtonsWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "SecurityLinkButtonsWebPartStrings": "lib/webparts/securityLinkButtons/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js",
+    "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js"
+  }
+}
